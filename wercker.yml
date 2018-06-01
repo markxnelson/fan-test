@@ -1,0 +1,16 @@
+box: alpine
+
+build:
+  steps:
+
+echoa:
+  steps:
+    - script:
+        name: echo AA
+        code: echo 'AA' > forward.txt
+
+readfile:
+  steps:
+    - script:
+        name: read forward.txt
+        code: cat forward.txt
