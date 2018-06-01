@@ -9,6 +9,12 @@ echoa:
         name: echo AA
         code: echo 'AA' > forward.txt
 
+echob:
+  steps:
+    - script:
+        name: echo BBB
+        code: echo 'BBB' > forward.txt
+
 readfile:
   steps:
     - script:
