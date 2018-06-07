@@ -7,13 +7,13 @@ echoa:
   steps:
     - script:
         name: echo AA
-        code: echo 'AA' > forward.txt
+        code: sleep 5 && echo 'AA' > forward.txt
 
 echob:
   steps:
     - script:
         name: echo BBB
-        code: echo 'BBB' > forward.txt
+        code: sleep 8 && echo 'BBB' > forward.txt
 
 readfile:
   steps:
