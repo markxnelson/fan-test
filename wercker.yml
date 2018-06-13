@@ -19,10 +19,10 @@ readfile:
   steps:
     - script:
         name: read forward.txt
-        code: cat forward.txt
+        code: ls -la && cat echoa/forward.txt
 
 readfile2:
   steps:
     - script:
         name: read forward.txt
-        code: cat forward.txt && cat forward.txt
+        code: ls -la && cat echob/forward.txt
