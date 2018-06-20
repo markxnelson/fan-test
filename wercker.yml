@@ -7,19 +7,19 @@ echoa:
   steps:
     - script:
         name: echo AA
-        code: sleep 5 && echo 'AA' > forward.txt
+        code: echo 'AA' > forward.txt
 
 echob:
   steps:
     - script:
         name: echo BBB
-        code: sleep 8 && echo 'BBB' > forward.txt
+        code: echo 'BBB' > forward.txt
 
 readfile:
   steps:
     - script:
         name: read forward.txt
-        code: ls -la && cat echoa/forward.txt
+        code: ls -la && cat echoa/forward.txt && cat echob/forward.txt
 
 readfile2:
   steps:
